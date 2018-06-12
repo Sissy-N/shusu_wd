@@ -14,11 +14,35 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>首页-淑塑瑜伽</title>
+    <link rel="stylesheet" href="css/amazeui.min.css">
     <link rel="stylesheet" href="css/base.css">
-    <script src="js/base.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/adapter.js"></script>
 </head>
 <body>
-
-<script src="js/jquery.min.js"></script>
+    <header class="s-header">
+        <img src="" alt="" class="s-logo">
+        <span class="s-name">淑塑瑜伽</span>
+    </header>
+    <nav class="s-nav">
+        <ul class="s-navlist">
+            <li><a href="index.html">淑塑首页</a></li>
+            <li><a href="index.html">学院介绍</a></li>
+            <li><a href="index.html">老师介绍</a></li>
+            <li><a href="index.html">课程介绍</a></li>
+            <li><a href="index.html">证书查询</a></li>
+        </ul>
+    </nav>
+    <section style="height: 20rem;width: 100%;background-color: red"></section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/adapter.js"></script>
+    <script>
+        var sheader = $('.s-header').outerHeight()
+        $(document).scroll(function(){
+            var iStop = $(document).scrollTop()
+            iStop>sheader? $('html').addClass('nav-fixed'): $('html').removeClass('nav-fixed')
+        })
+    </script>
 </body>
 </html>

@@ -71,11 +71,8 @@ body {
     height: 100%;
 }
 
-body {
-    line-height: 1;
-* {
+body * {
     box-sizing: border-box;
-}
 }
 
 ol,
@@ -210,4 +207,78 @@ img {
     height: 0;
     clear: both;
     visibility: hidden;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+    /*头部*/
+.s-header {
+    width: 100%;
+    height: 1rem;
+    background-color: #B6DDC9;
+    padding: 0.24rem 0 0.24rem 0.27rem;
+    display: flex;
+    align-items: center;
+}
+
+.s-logo {
+    height: 0.52rem;
+}
+
+.s-name {
+    color: #fff;
+    font-size: 0.38rem;
+    margin-left: 0.15rem;
+}
+
+.s-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.s-nav:before {
+    display: block;
+    content: '';
+    height: 1rem;
+}
+
+.s-navlist {
+    width: 100%;
+    display: flex;
+    background-color: rgba(50, 65, 88, 0.3);
+    height: 1rem;
+}
+
+.s-navlist li {
+    flex: 1;
+    height: 1rem;
+    border-bottom: 0.04rem solid transparent;
+    text-align: center;
+}
+
+.s-navlist li a {
+    display: block;
+    color: #f2f2f6;
+    font-size: 0.28rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+.nav-fixed .s-nav{
+    animation: getfixed 0.5s forwards;
+}
+
+@keyframes getfixed {
+    from{
+        top: 0;
+        background-color: red;
+    }
+    to{
+        top: -1rem;
+        background-color: blue;
+    }
 }
