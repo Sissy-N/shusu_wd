@@ -63,7 +63,6 @@ td {
     font-style: inherit;
     font-family: inherit;
     font-size: 100%;
-    vertical-align: baseline;
 }
 
 html,
@@ -226,6 +225,7 @@ body{
     top: 0;
     left: 0;
     transition: top 0.5s;
+    z-index: 2;
 }
 
 .s-logo {
