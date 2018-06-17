@@ -1,3 +1,300 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    vertical-align: middle;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+a img {
+    border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+audio:not([controls]),
+[hidden] {
+    display: none;
+}
+
+/* iPhone4/5 */
+@media (max-width: 320px) {
+    html {
+        font-size: 42.66665px;
+    }
+}
+
+/* iPhone 6 */
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 50px;
+    }
+}
+
+/* iPhone 6 + */
+@media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media (min-width: 321px) and (max-device-width: 374px) {
+    html {
+        font-size: 47px;
+    }
+}
+
+@media (min-width: 737px) and (max-device-width: 1024px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+body {
+    font-family: PingFangSC-Light, 'helvetica neue', 'hiragino sans gb', tahoma, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+    -webkit-text-size-adjust: 100% !important;
+}
+
+a,
+img,
+div,
+button,
+input {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*头部*/
+.s-header {
+    width: 100%;
+    height: 1rem;
+    background-color: #B6DDC9;
+    padding: 0.24rem 0 0.24rem 0.27rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.5s;
+    z-index: 2;
+}
+
+.s-logo {
+    height: 0.52rem;
+}
+
+.s-name {
+    color: #fff;
+    font-size: 0.38rem;
+    margin-left: 0.15rem;
+}
+
+.s-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.5s;
+    z-index: 2;
+}
+
+.s-nav:before {
+    display: block;
+    content: '';
+    height: 1rem;
+}
+
+.s-navlist {
+    width: 100%;
+    display: flex;
+    background-color: rgba(50, 65, 88, 0.3);
+    height: 1rem;
+    transition: 0.5s;
+}
+
+.s-navlist li {
+    flex: 1;
+    height: 1rem;
+    border-bottom: 0.04rem solid transparent;
+    text-align: center;
+}
+
+.s-navlist li a {
+    display: block;
+    color: #f2f2f6;
+    font-size: 0.28rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+.s-navlist .active{
+    border-bottom: 0.04rem solid #B6DDC9;
+}
+.s-navlist .active a{
+    color: #B6DDC9;
+}
+.nav-fixed .s-header{
+    top: -1rem;
+}
+.nav-fixed .s-nav{
+    top: -1rem;
+}
+.nav-fixed .s-navlist{
+    background-color: rgba(50, 65, 88, 1);
+}
+.s-container{
+    width: 100%;
+    padding-top: 1rem;
+}
+
 .s-swiper {
     width: 100%;
     height: 4.6rem;
@@ -211,7 +508,9 @@
     position: relative;
     margin-bottom: 0.2rem;
 }
-
+.s-course-item  a{
+    display: block;
+}
 .s-course-item:nth-of-type(even) {
     margin-right: 0;
 }

@@ -36,7 +36,7 @@ var traningSwiper = new Swiper('.s-training-swiper', {
         el: '.s-training-pagination'
     },
     autoplay: {
-        delay: 2000,    //轮播切换时间
+        delay: 3000,    //轮播切换时间
         disableOnInteraction: false
     },
     speed: 1000,
@@ -55,7 +55,7 @@ var studentSwiper = new Swiper('.s-student-swiper', {
         el: '.s-student-pagination'
     },
     autoplay: {
-        delay: 2000,    //轮播切换时间
+        delay: 3000,    //轮播切换时间
         disableOnInteraction: false
     },
     speed: 1000,
@@ -72,7 +72,7 @@ var casesSwiper = new Swiper('.s-cases-swiper', {
         el: '.s-cases-pagination'
     },
     autoplay: {
-        delay: 2000,    //轮播切换时间
+        delay: 3000,    //轮播切换时间
         disableOnInteraction: false
     },
     speed: 1000
