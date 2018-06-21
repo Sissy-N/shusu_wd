@@ -438,6 +438,7 @@ body{
 
 .s-teacher-description {
     width: 3.4rem;
+    position: relative;
 }
 
 .s-teacher-item h5 {
@@ -451,6 +452,9 @@ body{
 }
 .s-student-cases h5{
     width: 1rem;
+}
+.s-courses-item h5{
+    width: 1.4rem;
 }
 .s-teacher-item p {
     font-size: 0.22rem;
@@ -473,7 +477,8 @@ body{
 .s-teacher-middle-item .s-teacher-item-sp{
     font-size: 0.24rem;
     color: #505050;
-    line-height: 0.52rem;
+    line-height: 0.36rem;
+    width: 2.4rem;
 }
 .s-teacher-middle-item {
     display: flex;
@@ -483,7 +488,7 @@ body{
 .s-teacher-middle-item h5, .s-teacher-middle-item {
     font-size: 0.24rem;
     color: #505050;
-    line-height: 0.52rem;
+    line-height: 0.36rem;
 }
 
 .s-teacher-bottom-item {
@@ -1182,6 +1187,11 @@ body{
 }
 .s-scases-btn-left{
     width: 2.5rem;
+    position: absolute;
+    bottom: 0;
+}
+.s-courses-btn-left{
+    width: 1.5rem;
 }
 
 .s-page{
