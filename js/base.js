@@ -54,10 +54,10 @@ var studentSwiper = new Swiper('.s-student-swiper', {
     pagination: {
         el: '.s-student-pagination'
     },
-    /*autoplay: {
+    autoplay: {
         delay: 3000,    //轮播切换时间
         disableOnInteraction: false
-    },*/
+    },
     speed: 1000,
     spaceBetween: gap,
     slidesPerGroup: 1,

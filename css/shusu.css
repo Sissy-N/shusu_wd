@@ -454,7 +454,9 @@ body{
     width: 1rem;
 }
 .s-courses-item h5{
-    width: 1.4rem;
+    width: 100%;
+    line-height: 0.42rem;
+    padding-bottom: 0.1rem;
 }
 .s-teacher-item p {
     font-size: 0.22rem;
@@ -474,6 +476,9 @@ body{
     font-size: 0.28rem;
     line-height: 0.52rem;
 }
+.s-courses-item .s-teacher-item-sp{
+    line-height: 0.36rem;
+}
 .s-teacher-middle-item .s-teacher-item-sp{
     font-size: 0.24rem;
     color: #505050;
@@ -492,8 +497,10 @@ body{
 }
 
 .s-teacher-bottom-item {
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .s-teacher-btn-left, .s-teacher-btn-right {
@@ -505,6 +512,10 @@ body{
     line-height: 0.5rem;
     color: #fff;
     text-align: center;
+    float: left;
+}
+.s-teacher-btn-right{
+    float: right;
 }
 .s-teacher-btn-left:visited, .s-teacher-btn-right:visited{
     color: #fff;
@@ -804,14 +815,14 @@ body{
     padding-bottom: 0.8rem;
 }
 .s-cases-item{
-    display: flex;
+    width: 100%;
     height: 100%;
 }
 .s-cases-item-left, .s-cases-item-right{
     width: 50%;
     height: 100%;
 }
-.s-cases-item-left img{
+.s-cases-item-left img, .s-cases-item img{
     height: 100%;
     width: 100%;
 }
@@ -1225,4 +1236,8 @@ a.inner-link:hover, a.inner-link:visited{
 }
 a.inner-link:active{
     color: orangered;
+}
+.s-training-item-dd-right{
+    text-decoration: line-through;
+    color: red;
 }
